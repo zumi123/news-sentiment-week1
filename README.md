@@ -74,6 +74,7 @@ This section contains the code for **Task 1** of the Week 1 challenge, focusing 
 
 > **Note**: Large files like `data/raw_analyst_ratings.csv` are excluded from Git tracking via `.gitignore`.
 
+---
 
 ## 📈 Task 2 – Quantitative Analysis Using PyNance and Technical Indicators
 
@@ -96,4 +97,54 @@ Install dependencies:
 
 ```bash
 pip install yfinance pandas-ta matplotlib
+```
+
+## 🧠 Task 3: News Sentiment and Stock Movement Correlation
+
+This task investigates the relationship between daily news sentiment and corresponding stock price changes using sentiment analysis and financial metrics.
+
+### 📌 Objective
+
+To assess how news sentiment influences stock price movements by:
+- Performing sentiment analysis on daily news headlines.
+- Aligning sentiment scores with stock return data.
+- Computing the correlation between sentiment and stock changes.
+
+---
+
+### 🧰 Tools & Libraries
+
+- Python 🐍
+- `pandas`, `numpy`
+- `TextBlob` / `NLTK` (for sentiment scoring)
+- `matplotlib`, `seaborn` (for visualization)
+- `scipy.stats` (for correlation calculation)
+
+---
+
+### 🔄 Workflow
+
+1. **Preprocessing**  
+   - Parse and clean the news dataset.
+   - Normalize dates and filter valid entries.
+
+2. **Sentiment Analysis**  
+   - Use TextBlob/NLTK to compute sentiment polarity scores for news headlines.
+   - Average sentiment per day.
+
+3. **Stock Movement Analysis**  
+   - Calculate daily returns from stock prices.
+   - Merge stock and sentiment data on date.
+
+4. **Correlation Calculation**  
+   - Use Pearson correlation to determine the linear relationship between sentiment and price movement.
+   - Visualize the relationship using scatter plots.
+
+### ✅ Dependencies
+
+Install requirements with:
+
+```bash
+pip install -r requirements.txt
+
 
