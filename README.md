@@ -1,6 +1,12 @@
-# 📊 News Sentiment Analysis – Task 1
+# 🗂️ News Sentiment Analysis – Weekly Project
 
-This repository contains the code for **Task 1** of the Week 1 challenge, focusing on:
+This repository includes weekly tasks for sentiment and financial data analysis using Python, Git, and data science tools.
+
+---
+
+## 📌 Task 1 – Git, GitHub, and News EDA
+
+This section contains the code for **Task 1** of the Week 1 challenge, focusing on:
 
 - Setting up a Python project with Git & GitHub
 - CI/CD integration using GitHub Actions
@@ -8,7 +14,7 @@ This repository contains the code for **Task 1** of the Week 1 challenge, focusi
 
 ---
 
-## 📁 Folder Structure
+### 📁 Folder Structure
 
 ```
 ├── .github/workflows/       # CI/CD configuration
@@ -24,7 +30,7 @@ This repository contains the code for **Task 1** of the Week 1 challenge, focusi
 
 ---
 
-## 🔧 Setup Instructions
+### 🔧 Setup Instructions
 
 1. **Clone the repo**:
    ```bash
@@ -45,7 +51,7 @@ This repository contains the code for **Task 1** of the Week 1 challenge, focusi
 
 ---
 
-## 🚀 Scripts Overview
+### 🚀 Scripts Overview
 
 | Script                      | Description                                      |
 |----------------------------|--------------------------------------------------|
@@ -56,7 +62,7 @@ This repository contains the code for **Task 1** of the Week 1 challenge, focusi
 
 ---
 
-## ✅ CI/CD
+### ✅ CI/CD
 
 - CI pipeline uses GitHub Actions.
 - Runs on every push to `main` or `task-*`.
@@ -64,6 +70,30 @@ This repository contains the code for **Task 1** of the Week 1 challenge, focusi
 
 ---
 
-## 📊 Data
+### 📊 Data
 
 > **Note**: Large files like `data/raw_analyst_ratings.csv` are excluded from Git tracking via `.gitignore`.
+
+
+## 📈 Task 2 – Quantitative Analysis Using PyNance and Technical Indicators
+
+This task explores stock price data by applying key technical analysis indicators using Python. We use the `yfinance` and `pandas-ta` libraries to analyze historical stock prices and visualize market trends.
+
+---
+
+### 🧩 Tools & Libraries
+
+- **[PyNance](https://pypi.org/project/pynance/)** or **[yfinance](https://pypi.org/project/yfinance/)** – to fetch historical stock price data
+- **[pandas-ta](https://github.com/twopirllc/pandas-ta)** – for calculating technical indicators like SMA, RSI, and MACD
+- **pandas** – data manipulation
+- **matplotlib** – data visualization
+
+---
+
+### 🔧 Setup
+
+Install dependencies:
+
+```bash
+pip install yfinance pandas-ta matplotlib
+
